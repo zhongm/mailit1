@@ -21,10 +21,8 @@ Rails.application.configure do
   config.action_mailer.smtp_settings = {
   :address => "smtp.gmail.com",
   :port => 587,
-  :domain => "thawing-forest-2183.herokuapp.com",
-  #:user_name => "sweetbear826",
+  #:domain => "thawing-forest-2183.herokuapp.com",
   :user_name => ENV["GMAIL_USERNAME"],
-  #:password => "sweetbr826",
   :password => ENV["GMAIL_PASSWORD"],
   :authentication => "plain",
   :enable_starttls_auto => true  
